@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { Context } from '../index';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
 import { SHOP_ROUTE } from "../utils/consts";
 import { observer } from "mobx-react-lite";
 
-const Navbar = observer(() => {
+const NavBar = observer(() => {
   const { user } = useContext(Context);
   return (
     <Navbar bg="dark" variant="dark">
@@ -25,4 +27,4 @@ const Navbar = observer(() => {
   )
 });
 
-export default Navbar
+export default NavBar

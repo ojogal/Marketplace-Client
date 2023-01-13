@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Switch, Route, Redirect } from 'react';
 import { authRoutes } from "../routes";
 import { publicRoutes } from "../routes";
 import { SHOP_ROUTE } from "../utils/consts";
+import { Context } from "..";
 
 const AppRouter = () => {
   const { user } = useContext(Context);
