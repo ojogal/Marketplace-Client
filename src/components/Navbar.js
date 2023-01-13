@@ -9,11 +9,16 @@ const Navbar = () => {
     <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href={ SHOP_ROUTE }>Kjøpe en enhet</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Hjem</Nav.Link>
-          <Nav.Link href="#features">Egenskaper</Nav.Link>
-          <Nav.Link href="#pricing">Prisseting</Nav.Link>
+        { user.isAuth ? 
+        <Nav className="ml-auto">
+          <Nav.Link href="#home">Admin</Nav.Link>
+          <Nav.Link href="#features">Tast inn</Nav.Link>
         </Nav>
+        :
+        <Nav className="ml-auto">
+          <Nav.Link href="#home">Autorisasjon</Nav.Link>
+        </Nav>
+        }
       </Container>
     </Navbar>
   )
