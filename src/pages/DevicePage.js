@@ -6,4 +6,6 @@ const DevicePage = () => {
       Enhet side
     </div>
   )
-}
+};
+
+export default DevicePage;

@@ -6,4 +6,6 @@ const Basket = () => {
       Kurv
     </div>
   )
-}
+};
+
+export default Basket;

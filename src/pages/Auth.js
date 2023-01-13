@@ -6,4 +6,6 @@ const Auth = () => {
       Autorisasjon
     </div>
   );
-}
+};
+
+export default Auth;

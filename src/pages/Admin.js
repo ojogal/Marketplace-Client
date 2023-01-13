@@ -6,4 +6,6 @@ const Admin = () => {
       Admin
     </div>
   )
-}
+};
+
+export default Admin;

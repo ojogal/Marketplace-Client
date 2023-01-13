@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react';
 import { authRoutes } from "../routes";
 import { publicRoutes } from "../routes";
 
@@ -15,4 +15,6 @@ const AppRouter = () => {
       }) }
     </Switch>
   )
-}
+};
+
+export default AppRouter;

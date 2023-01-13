@@ -6,4 +6,6 @@ const Shop = () => {
       Butikk
     </div>
   )
-}
+};
+
+export default Shop;
